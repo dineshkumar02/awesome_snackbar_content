@@ -89,7 +89,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                     Text(
                       message,
                       style: TextStyle(
-                        fontSize: size.height * 0.016,
+                        fontSize: size.height * 0.035,
                         color: Colors.white,
                       ),
                       maxLines: 2,
