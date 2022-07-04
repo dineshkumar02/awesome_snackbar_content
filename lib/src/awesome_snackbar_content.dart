@@ -67,13 +67,10 @@ class AwesomeSnackbarContent extends StatelessWidget {
                         /// `title` parameter
                         Text(
                           title,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyLarge!
-                              .copyWith(
-                                color:
-                                    Theme.of(context).colorScheme.onBackground,
-                              ),
+                          style:
+                              Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                    color: Colors.white,
+                                  ),
                         ),
                         InkWell(
                           onTap: () => ScaffoldMessenger.of(context)
@@ -92,7 +89,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                     Text(
                       message,
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                            color: Theme.of(context).colorScheme.onBackground,
+                            color: Colors.white,
                           ),
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
