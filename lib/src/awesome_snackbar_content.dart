@@ -58,8 +58,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                 width: size.width * 0.122,
               ),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: ListView(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
