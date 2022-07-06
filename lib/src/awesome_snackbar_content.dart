@@ -83,7 +83,9 @@ class AwesomeSnackbarContent extends StatelessWidget {
                         )
                       ],
                     ),
-                    const Spacer(),
+                    SizedBox(
+                      height: size.height * 0.01,
+                    ),
 
                     /// `message` body text parameter
                     Expanded(
