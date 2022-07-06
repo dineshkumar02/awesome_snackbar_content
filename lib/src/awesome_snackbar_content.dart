@@ -68,7 +68,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                         Text(
                           title,
                           style:
-                              Theme.of(context).textTheme.bodyLarge!.copyWith(
+                              Theme.of(context).textTheme.bodyMedium!.copyWith(
                                     color: Colors.white,
                                   ),
                         ),
@@ -86,13 +86,15 @@ class AwesomeSnackbarContent extends StatelessWidget {
                     const Spacer(),
 
                     /// `message` body text parameter
-                    Text(
-                      message,
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                            color: Colors.white,
-                          ),
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
+                    Expanded(
+                      child: Text(
+                        message,
+                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                              color: Colors.white,
+                            ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
                   ],
                 ),
